@@ -1,0 +1,90 @@
+Приложение 
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Идея для карусели</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 20px; }
+    canvas { border: 1px solid #ccc; margin-top: 20px; max-width: 100%; }
+  </style>
+</head>
+<body>
+  <h2>Быстрые идеи для карусели</h2>
+
+  <!-- Кнопка записи -->
+  <button id="startBtn">🎤 Надиктовать</button>
+  <p><strong>Текст:</strong> <span id="result"></span></p>
+
+  <!-- Загрузка фото -->
+  <input type="file" id="upload" accept="image/*"><br>
+
+  <!-- Кнопка нанести текст -->
+  <button id="applyText">Нанести текст</button>
+  <button id="download">Скачать</button>
+
+  <!-- Канвас для фото -->
+  <canvas id="canvas"></canvas>
+
+<script>
+let recognition;
+if ('webkitSpeechRecognition' in window) {
+  recognition = new webkitSpeechRecognition();
+  recognition.lang = 'ru-RU';
+  recognition.continuous = false;
+  recognition.interimResults = false;
+
+  recognition.onresult = (event) => {
+    document.getElementById('result').textContent = event.results[0][0].transcript;
+  };
+}
+
+document.getElementById('startBtn').onclick = () => {
+  if (recognition) recognition.start();
+  else alert("Ваш браузер не поддерживает распознавание речи 😢");
+};
+
+// Работа с фото
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let image = new Image();
+
+document.getElementById('upload').onchange = (e) => {
+  const file = e.target.files[0];
+  const reader = new FileReader();
+  reader.onload = () => {
+    image.onload = () => {
+      canvas.width = image.width;
+      canvas.height = image.height;
+      ctx.drawImage(image, 0, 0);
+    };
+    image.src = reader.result;
+  };
+  reader.readAsDataURL(file);
+};
+
+// Нанести текст
+document.getElementById('applyText').onclick = () => {
+  if (!image.src) return alert("Сначала выберите фото!");
+  const text = document.getElementById('result').textContent;
+  ctx.drawImage(image, 0, 0);
+  ctx.font = "40px Arial";
+  ctx.fillStyle = "white";
+  ctx.strokeStyle = "black";
+  ctx.lineWidth = 3;
+  ctx.textAlign = "center";
+  ctx.strokeText(text, canvas.width/2, canvas.height - 50);
+  ctx.fillText(text, canvas.width/2, canvas.height - 50);
+};
+
+// Скачать
+document.getElementById('download').onclick = () => {
+  const link = document.createElement('a');
+  link.download = "idea.png";
+  link.href = canvas.toDataURL();
+  link.click();
+};
+</script>
+</body>
+</html>

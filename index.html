@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.1.2.1 (Windows)"/>
+	<meta name="created" content="2017-10-20T23:40:51.940000000"/>
+	<meta name="changed" content="2025-09-05T04:34:35.782000000"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120%; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="margin-bottom: 0in; line-height: 100%">
+&lt;!DOCTYPE html&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;html lang=&quot;ru&quot;&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;head&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;meta
+charset=&quot;UTF-8&quot;&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;title&gt;Идея
+для карусели&lt;/title&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;style&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">    body {
+font-family: sans-serif; text-align: center; margin: 20px; }</p>
+<p style="margin-bottom: 0in; line-height: 100%">    canvas { border:
+1px solid #ccc; margin-top: 20px; max-width: 100%; }</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;/style&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;/head&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;body&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;h2&gt;Быстрые
+идеи для карусели&lt;/h2&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;!-- Кнопка
+записи --&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;button
+id=&quot;startBtn&quot;&gt;&#127908; Надиктовать&lt;/button&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+&lt;p&gt;&lt;strong&gt;Текст:&lt;/strong&gt; &lt;span
+id=&quot;result&quot;&gt;&lt;/span&gt;&lt;/p&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;!-- Загрузка
+фото --&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;input
+type=&quot;file&quot; id=&quot;upload&quot; accept=&quot;image/*&quot;&gt;&lt;br&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;!-- Кнопка
+нанести текст --&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;button
+id=&quot;applyText&quot;&gt;Нанести текст&lt;/button&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;button
+id=&quot;download&quot;&gt;Скачать&lt;/button&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;!-- Канвас для
+фото --&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  &lt;canvas
+id=&quot;canvas&quot;&gt;&lt;/canvas&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;script&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">let recognition;</p>
+<p style="margin-bottom: 0in; line-height: 100%">if
+('webkitSpeechRecognition' in window) {</p>
+<p style="margin-bottom: 0in; line-height: 100%">  recognition = new
+webkitSpeechRecognition();</p>
+<p style="margin-bottom: 0in; line-height: 100%">  recognition.lang =
+'ru-RU';</p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+recognition.continuous = false;</p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+recognition.interimResults = false;</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+recognition.onresult = (event) =&gt; {</p>
+<p style="margin-bottom: 0in; line-height: 100%">   
+document.getElementById('result').textContent =
+event.results[0][0].transcript;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  };</p>
+<p style="margin-bottom: 0in; line-height: 100%">}</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">document.getElementById('startBtn').onclick
+= () =&gt; {</p>
+<p style="margin-bottom: 0in; line-height: 100%">  if (recognition)
+recognition.start();</p>
+<p style="margin-bottom: 0in; line-height: 100%">  else alert(&quot;Ваш
+браузер не поддерживает распознавание речи &#128546;&quot;);</p>
+<p style="margin-bottom: 0in; line-height: 100%">};</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">// Работа с фото</p>
+<p style="margin-bottom: 0in; line-height: 100%">const canvas =
+document.getElementById('canvas');</p>
+<p style="margin-bottom: 0in; line-height: 100%">const ctx =
+canvas.getContext('2d');</p>
+<p style="margin-bottom: 0in; line-height: 100%">let image = new
+Image();</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">document.getElementById('upload').onchange
+= (e) =&gt; {</p>
+<p style="margin-bottom: 0in; line-height: 100%">  const file =
+e.target.files[0];</p>
+<p style="margin-bottom: 0in; line-height: 100%">  const reader = new
+FileReader();</p>
+<p style="margin-bottom: 0in; line-height: 100%">  reader.onload = ()
+=&gt; {</p>
+<p style="margin-bottom: 0in; line-height: 100%">    image.onload =
+() =&gt; {</p>
+<p style="margin-bottom: 0in; line-height: 100%">      canvas.width =
+image.width;</p>
+<p style="margin-bottom: 0in; line-height: 100%">      canvas.height
+= image.height;</p>
+<p style="margin-bottom: 0in; line-height: 100%">     
+ctx.drawImage(image, 0, 0);</p>
+<p style="margin-bottom: 0in; line-height: 100%">    };</p>
+<p style="margin-bottom: 0in; line-height: 100%">    image.src =
+reader.result;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  };</p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+reader.readAsDataURL(file);</p>
+<p style="margin-bottom: 0in; line-height: 100%">};</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">// Нанести текст</p>
+<p style="margin-bottom: 0in; line-height: 100%">document.getElementById('applyText').onclick
+= () =&gt; {</p>
+<p style="margin-bottom: 0in; line-height: 100%">  if (!image.src)
+return alert(&quot;Сначала выберите фото!&quot;);</p>
+<p style="margin-bottom: 0in; line-height: 100%">  const text =
+document.getElementById('result').textContent;</p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+ctx.drawImage(image, 0, 0);</p>
+<p style="margin-bottom: 0in; line-height: 100%">  ctx.font = &quot;40px
+Arial&quot;;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  ctx.fillStyle =
+&quot;white&quot;;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  ctx.strokeStyle =
+&quot;black&quot;;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  ctx.lineWidth = 3;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  ctx.textAlign =
+&quot;center&quot;;</p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+ctx.strokeText(text, canvas.width/2, canvas.height - 50);</p>
+<p style="margin-bottom: 0in; line-height: 100%">  ctx.fillText(text,
+canvas.width/2, canvas.height - 50);</p>
+<p style="margin-bottom: 0in; line-height: 100%">};</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">// Скачать</p>
+<p style="margin-bottom: 0in; line-height: 100%">document.getElementById('download').onclick
+= () =&gt; {</p>
+<p style="margin-bottom: 0in; line-height: 100%">  const link =
+document.createElement('a');</p>
+<p style="margin-bottom: 0in; line-height: 100%">  link.download =
+&quot;idea.png&quot;;</p>
+<p style="margin-bottom: 0in; line-height: 100%">  link.href =
+canvas.toDataURL();</p>
+<p style="margin-bottom: 0in; line-height: 100%">  link.click();</p>
+<p style="margin-bottom: 0in; line-height: 100%">};</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;/script&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;/body&gt;</p>
+<p style="margin-bottom: 0in; line-height: 100%">&lt;/html&gt;</p>
+</body>
+</html>

@@ -1,0 +1,220 @@
+[
+ {
+  "id": "hook",
+  "start": 0.0,
+  "duration": 15.091,
+  "subs": [
+   {
+    "text": "One three-digit number can decide whether you get the apartment, and how much interest you pay on a car or a home.",
+    "start": 0.0,
+    "end": 6.571
+   },
+   {
+    "text": "That number is your credit score.",
+    "start": 6.871,
+    "end": 8.577
+   },
+   {
+    "text": "Most people have no idea how it's actually calculated.",
+    "start": 8.877,
+    "end": 12.269
+   },
+   {
+    "text": "In the next few minutes, you will.",
+    "start": 12.569,
+    "end": 14.191
+   }
+  ]
+ },
+ {
+  "id": "range",
+  "start": 15.091,
+  "duration": 22.771,
+  "subs": [
+   {
+    "text": "Most lenders in the US use the FICO score, and it runs from 300 to 850.",
+    "start": 0.0,
+    "end": 5.867
+   },
+   {
+    "text": "Below 580 is poor. 580 to 669 is fair.",
+    "start": 6.167,
+    "end": 11.543
+   },
+   {
+    "text": "670 to 739 is good. 740 to 799 is very good.",
+    "start": 11.843,
+    "end": 19.288
+   },
+   {
+    "text": "And 800 or higher is exceptional.",
+    "start": 19.588,
+    "end": 21.871
+   }
+  ]
+ },
+ {
+  "id": "pie",
+  "start": 37.861,
+  "duration": 4.763,
+  "subs": [
+   {
+    "text": "Your score is built from five ingredients.",
+    "start": 0.0,
+    "end": 2.304
+   },
+   {
+    "text": "And they are not equal.",
+    "start": 2.604,
+    "end": 3.863
+   }
+  ]
+ },
+ {
+  "id": "payment",
+  "start": 42.624,
+  "duration": 17.8,
+  "subs": [
+   {
+    "text": "The biggest one, about 35 percent, is payment history.",
+    "start": 0.0,
+    "end": 3.563
+   },
+   {
+    "text": "Do you pay on time?",
+    "start": 3.863,
+    "end": 5.1
+   },
+   {
+    "text": "A payment that's 30 or more days late can be reported to the credit bureaus, and stay on your report for up to seven years.",
+    "start": 5.4,
+    "end": 12.248
+   },
+   {
+    "text": "The simplest fix: set up autopay for at least the minimum on every card.",
+    "start": 12.548,
+    "end": 16.9
+   }
+  ]
+ },
+ {
+  "id": "utilization",
+  "start": 60.424,
+  "duration": 24.371,
+  "subs": [
+   {
+    "text": "Next, about 30 percent, is how much you owe, mainly your credit utilization.",
+    "start": 0.0,
+    "end": 4.757
+   },
+   {
+    "text": "That's your card balances divided by your total credit limits.",
+    "start": 5.057,
+    "end": 8.641
+   },
+   {
+    "text": "If your limit is 5,000 dollars and your balance is 2,500, your utilization is 50 percent. That looks risky.",
+    "start": 8.941,
+    "end": 17.091
+   },
+   {
+    "text": "Common advice is to stay under 30 percent. People with the highest scores often stay under 10.",
+    "start": 17.391,
+    "end": 23.471
+   }
+  ]
+ },
+ {
+  "id": "length",
+  "start": 84.795,
+  "duration": 10.097,
+  "subs": [
+   {
+    "text": "About 15 percent is the length of your credit history.",
+    "start": 0.0,
+    "end": 3.2
+   },
+   {
+    "text": "Older accounts help.",
+    "start": 3.5,
+    "end": 4.78
+   },
+   {
+    "text": "That's why closing your oldest credit card can actually lower your score.",
+    "start": 5.08,
+    "end": 9.197
+   }
+  ]
+ },
+ {
+  "id": "newmix",
+  "start": 94.892,
+  "duration": 16.007,
+  "subs": [
+   {
+    "text": "The last two are about 10 percent each.",
+    "start": 0.0,
+    "end": 1.984
+   },
+   {
+    "text": "New credit: every application can trigger a hard inquiry, which may cost you a few points for a while.",
+    "start": 2.284,
+    "end": 8.215
+   },
+   {
+    "text": "And credit mix: having different types, like a card and a loan, helps a little. But never take a loan just for this.",
+    "start": 8.515,
+    "end": 15.107
+   }
+  ]
+ },
+ {
+  "id": "myth",
+  "start": 110.899,
+  "duration": 11.719,
+  "subs": [
+   {
+    "text": "One myth to kill right now.",
+    "start": 0.0,
+    "end": 1.557
+   },
+   {
+    "text": "Checking your own score does not hurt it. That's a soft inquiry.",
+    "start": 1.857,
+    "end": 5.271
+   },
+   {
+    "text": "You can get your reports from all three bureaus for free at annualcreditreport.com.",
+    "start": 5.571,
+    "end": 10.819
+   }
+  ]
+ },
+ {
+  "id": "recap",
+  "start": 122.617,
+  "duration": 18.504,
+  "subs": [
+   {
+    "text": "So, to recap.",
+    "start": 0.0,
+    "end": 1.067
+   },
+   {
+    "text": "Pay on time. Keep balances low. Keep old accounts open. And apply for new credit only when you need it.",
+    "start": 1.367,
+    "end": 8.129
+   },
+   {
+    "text": "Do those four things consistently, and your score takes care of itself.",
+    "start": 8.429,
+    "end": 12.269
+   },
+   {
+    "text": "In the next video, we'll show how to raise your score fast. Subscribe so you don't miss it.",
+    "start": 12.569,
+    "end": 17.604
+   }
+  ]
+ }
+]

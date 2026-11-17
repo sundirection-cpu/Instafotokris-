@@ -1,0 +1,42 @@
+[
+  {"id": "hook", "lines": [
+    "One three-digit number can decide whether you get the apartment, and how much interest you pay on a car or a home.",
+    "That number is your credit score.",
+    "Most people have no idea how it's actually calculated.",
+    "In the next few minutes, you will."]},
+  {"id": "range", "lines": [
+    "Most lenders in the US use the FICO score, and it runs from 300 to 850.",
+    "Below 580 is poor. 580 to 669 is fair.",
+    "670 to 739 is good. 740 to 799 is very good.",
+    "And 800 or higher is exceptional."]},
+  {"id": "pie", "lines": [
+    "Your score is built from five ingredients.",
+    "And they are not equal."]},
+  {"id": "payment", "lines": [
+    "The biggest one, about 35 percent, is payment history.",
+    "Do you pay on time?",
+    "A payment that's 30 or more days late can be reported to the credit bureaus, and stay on your report for up to seven years.",
+    "The simplest fix: set up autopay for at least the minimum on every card."]},
+  {"id": "utilization", "lines": [
+    "Next, about 30 percent, is how much you owe, mainly your credit utilization.",
+    "That's your card balances divided by your total credit limits.",
+    "If your limit is 5,000 dollars and your balance is 2,500, your utilization is 50 percent. That looks risky.",
+    "Common advice is to stay under 30 percent. People with the highest scores often stay under 10."]},
+  {"id": "length", "lines": [
+    "About 15 percent is the length of your credit history.",
+    "Older accounts help.",
+    "That's why closing your oldest credit card can actually lower your score."]},
+  {"id": "newmix", "lines": [
+    "The last two are about 10 percent each.",
+    "New credit: every application can trigger a hard inquiry, which may cost you a few points for a while.",
+    "And credit mix: having different types, like a card and a loan, helps a little. But never take a loan just for this."]},
+  {"id": "myth", "lines": [
+    "One myth to kill right now.",
+    "Checking your own score does not hurt it. That's a soft inquiry.",
+    "You can get your reports from all three bureaus for free at annual credit report dot com."]},
+  {"id": "recap", "lines": [
+    "So, to recap.",
+    "Pay on time. Keep balances low. Keep old accounts open. And apply for new credit only when you need it.",
+    "Do those four things consistently, and your score takes care of itself.",
+    "In the next video, we'll show how to raise your score fast. Subscribe so you don't miss it."]}
+]
